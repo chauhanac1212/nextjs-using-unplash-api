@@ -1,0 +1,54 @@
+#headers{
+    background: #1E2432 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.icons{
+    width: 190px;
+    display:flex;
+    justify-content: space-between;
+align-items: center;
+}
+.logo h1{
+color: white;
+opacity: 1;
+font-family: 'Times New Roman', Times, serif;
+}
+ .icons i{
+    font-size: 25px;
+    color: white;
+}
+.header{
+    /* padding-top: 6px; */
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#formControl:focus {
+    box-shadow: none;
+  }
+  @media (max-width:480px) {
+    .header{
+        flex-wrap: wrap;
+        height: auto;
+        padding-top: 20px;
+    }
+    .icons{
+        margin: auto;
+        width: 400px;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .search{
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    
+  } 
+
+  
+  
+
+ 
