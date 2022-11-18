@@ -5,6 +5,8 @@ import styles from "../styles/Header.module.css";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { card } from "../redux/Actions/action";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Header = () => {
   const [query, setquery] = useState();
@@ -12,7 +14,7 @@ const Header = () => {
   const data = result.data.data;
 
   const dispetch = useDispatch();
-  
+  const router=useRouter()
 
   const handleKeyPress = (event) => {
     if(event.key === 'Enter'){
@@ -33,7 +35,10 @@ const Header = () => {
       <div className="container">
         <div className={styles.header}>
           <div className={styles.logo}>
-            <h1>freely</h1>
+            
+            <h1 style={{textDecoration: 'none',
+  listStyle: 'none'}}> freely</h1>
+            
           </div>
           <div className={styles.search}>
             <div className="p-1 bg-light rounded rounded-pill shadow-sm ">
@@ -71,9 +76,11 @@ const Header = () => {
             </div>
           </div>
           <div className={styles.icons}>
+            <Link href='/Myaccount'>
             <i>
               <BiSave />
             </i>
+            </Link>
             <i>
               <BsBell />
             </i>

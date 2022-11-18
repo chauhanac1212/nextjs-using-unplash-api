@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Header from "../Commen/Header";
-import FreelyHome from "../Component/FreelyHome";
+import Sidebar from "../Commen/Sidebar";
+import FreelyHome from "./FreelyHome";
+import Myprofile from "../Component/my-profile/Myprofile";
+import Myaccount from "./Myaccount";
 import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
@@ -19,10 +22,13 @@ export default function Home() {
           rel="stylesheet"
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+          
         />
       </Head>
+     
       <Header />
       <FreelyHome/>
+      {/* <Myaccount/> */}
     </div>
   );
 }
