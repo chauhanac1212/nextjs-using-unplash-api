@@ -36,12 +36,11 @@ const Header = () => {
         <div className={styles.header}>
           <div className={styles.logo}>
             
-            <h1 style={{textDecoration: 'none',
-  listStyle: 'none'}}> freely</h1>
+            <h1> freely</h1>
             
           </div>
           <div className={styles.search}>
-            <div className="p-1 bg-light rounded rounded-pill shadow-sm ">
+            <div className="p-1 rounded rounded-pill shadow-sm " style={{background:'#242A37',opacity:'1'}}>
               <div className="input-group">
               
 
@@ -61,7 +60,7 @@ const Header = () => {
                   type="text"
                   placeholder="search"
                   aria-describedby="button-addon2"
-                  className="form-control border-0 bg-light"
+                  className="form-control"
                   required={true}
                   pattern="[a-z0-9._%+-]+[a-z]{2,}$"
                   value={query}
@@ -102,6 +101,30 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <style jsx>
+        {
+          `
+          :global(.form-control) {
+            display: block;
+            width: 100%;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: white;
+             border: 1px solid #ced4da;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 0.6rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            border: none;
+            
+    background-color: transparent;
+            
+        }
+          `
+          }
+      </style>
     </div>
   );
 };

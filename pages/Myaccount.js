@@ -16,10 +16,10 @@ const Myaccount = () => {
     <div className='container'>
         <div className={styles.FreelyHome1}>
                 <div className={styles.hearding}>
-                <h1 className={router.pathname == "/" ? "white" : ""}><Link style={{color:'white',  textDecoration: 'none'}} href='/'>Home</Link></h1>
-             
+                <Link href="/" style={{textDecoration:"none"}}>  <h1 style={{ color : router.route === "/" ? "#FFFFFF" : "#4E586E" }} >Home</h1></Link>
                 <h1 style={{paddingRight:"5px"}}>/</h1>
-                <h1 className={router.pathname == "/Myaccount" ? "active" : ""}><Link href='/Myaccount' style={{textDecoration:"none"}}>My Account</Link></h1>
+
+              <Link href="/Myaccount" style={{textDecoration:"none"}}>  <h1 style={{ color : router.route === "/Myaccount" ? "#FFFFFF" : "#4E586E" }} >My Account</h1></Link>
                 </div>
                 
         </div>

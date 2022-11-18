@@ -11,22 +11,27 @@ align-items: center;
 .logo h1{
 color: white;
 opacity: 1;
-font-family: 'Times New Roman', Times, serif;
+font: normal normal 900 36px/26px Avenir;
 }
  .icons i{
     font-size: 25px;
     color: white;
+    opacity: .8;
 }
 .header{
-    /* padding-top: 6px; */
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     
 }
+
+
+
 #formControl:focus {
     box-shadow: none;
+    background-color: transparent;
+    color: white;
   }
   @media (max-width:480px) {
     .header{
